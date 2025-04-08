@@ -1,0 +1,84 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  background-color: #fff;
+  border-bottom: 1px solid rgb(216, 216, 216);
+  z-index: 1000;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-right: 20px;
+}
+
+.navList {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navItem {
+  display: flex;
+}
+
+.navItem a {
+  font-family: "Helvetica", sans-serif;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: #000000;
+  font-size: 12px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navItem a:hover {
+  color: #bebebe;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #333;
+  font-size: 14px;
+  margin-left: 10px;
+  transition: color 0.3s ease;
+}
+
+.languageSelector {
+  font-size: 14px;
+  padding: 4px 8px;
+  transition: background-color 0.3s ease;
+  background: none;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+.languageSelector:hover {
+  color: #bebebe;
+  border-color: #bebebe;
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding: 18px 40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header {
+    padding: 18px 65px;
+  }
+}

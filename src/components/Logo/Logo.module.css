@@ -1,0 +1,44 @@
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logoText {
+  position: relative;
+}
+
+.logoText a {
+  font-family: "Arsenal", sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  padding-bottom: 4px; /* Щоб лінії не злипалися з текстом */
+  overflow: hidden;
+}
+
+.logoText a::before,
+.logoText a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 1px;
+  width: 0;
+  background-color: #000;
+  transition: width 0.4s ease-in-out;
+}
+
+.logoText a::before {
+  left: 0;
+}
+
+.logoText a::after {
+  right: 0;
+}
+
+.logoText a:hover::before,
+.logoText a:hover::after {
+  width: 50%;
+}

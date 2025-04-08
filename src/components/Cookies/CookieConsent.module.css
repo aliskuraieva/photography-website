@@ -1,0 +1,25 @@
+.cookie-consent {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cookie-consent button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #fb8a2e;
+  color: white;
+}
+
+.cookie-consent button:hover {
+  background-color: #d47726;
+}
