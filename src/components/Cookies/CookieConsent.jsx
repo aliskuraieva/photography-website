@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import styles from "./CookieConsent.module.css";
+import { useLanguage } from "../../hooks/useLanguage";
 
 export const CookieConsent = () => {
+  const { language } = useLanguage();
   const [cookiesAccepted, setCookiesAccepted] = useState(false);
 
   useEffect(() => {
@@ -23,10 +25,13 @@ export const CookieConsent = () => {
   return (
     <div className={styles["cookie-consent"]}>
       <p>
-        Ми використовуємо cookies для покращення вашого досвіду. Продовжуючи
-        перегляд сайту, ви погоджуєтесь на використання cookies.
+        {language === "ua"
+          ? "Ми використовуємо cookies для покращення вашого досвіду. Продовжуючи перегляд сайту, ви погоджуєтесь на використання cookies."
+          : "We use cookies to enhance your experience. By continuing to browse the site, you agree to our use of cookies."}
       </p>
-      <button onClick={handleAccept}>Прийняти</button>
+      <button onClick={handleAccept}>
+        {language === "ua" ? "Прийняти" : "Accept"}
+      </button>
     </div>
   );
 };
