@@ -16,6 +16,10 @@ export const CustomSwiper = ({ images }) => {
       grabCursor={true}
       navigation
       pagination={{ clickable: true }}
+      speed={1000}
+      style={{
+        transition: "all 1s ease",
+      }}
       className={styles.customSwiper}
     >
       {images.map((group, index) => (
@@ -33,6 +37,5 @@ export const CustomSwiper = ({ images }) => {
         </SwiperSlide>
       ))}
     </Swiper>
-    
   );
 };

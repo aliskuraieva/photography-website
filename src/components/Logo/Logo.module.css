@@ -15,8 +15,6 @@
   text-decoration: none;
   color: inherit;
   display: inline-block;
-  padding-bottom: 4px; /* Щоб лінії не злипалися з текстом */
-  overflow: hidden;
 }
 
 .logoText a::before,
