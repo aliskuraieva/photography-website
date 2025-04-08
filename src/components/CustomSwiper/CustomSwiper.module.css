@@ -1,0 +1,30 @@
+:root {
+  --swiper-navigation-color: #000;
+  --swiper-navigation-size: 24px;
+  --swiper-pagination-color: #fff;
+}
+
+.swiper-pagination-bullet {
+  background-color: var(--swiper-pagination-color);
+}
+
+.customSwiper {
+  width: 100%;
+  max-width: 90%;
+  position: relative;
+}
+
+.imageGroup {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.image {
+  flex: 1;
+  max-width: calc(50% - 10px);
+  height: auto;
+  object-fit: cover;
+}

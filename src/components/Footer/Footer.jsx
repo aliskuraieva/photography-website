@@ -36,8 +36,8 @@ export const Footer = () => {
       <div className={styles.footerContent}>
         <p>
           {language === "ua"
-            ? "Забронюй свою щасливу мить ✨"
-            : "Book your happy moment ✨"}
+            ? "Забронюй свою щасливу мить"
+            : "Book your happy moment"}
         </p>
         <ul className={styles.footerLinks}>
           <li>
